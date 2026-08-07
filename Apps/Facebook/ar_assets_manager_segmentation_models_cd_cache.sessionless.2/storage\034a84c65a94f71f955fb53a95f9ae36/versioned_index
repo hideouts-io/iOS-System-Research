@@ -1,1 +1,0 @@
-{"versions":[{"inserted_order":0,"models":[{"cacheKey":"61bbbfe274597700d6a8e327f36137c6","type":"CAFFE2_INIT_NET"},{"cacheKey":"034a84c65a94f71f955fb53a95f9ae36","type":"CAFFE2_PREDICT_NET"}],"version":1101}]}

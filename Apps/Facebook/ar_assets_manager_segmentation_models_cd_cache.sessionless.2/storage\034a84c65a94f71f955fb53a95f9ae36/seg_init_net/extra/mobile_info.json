@@ -1,1 +1,0 @@
-{"model_name": "segmentation_v1001_t0_ios", "model_type": "unknown", "op_list_string": "[\"aten::add.Tensor\", \"aten::max_pool2d\", \"aten::mul.Tensor\", \"aten::relu\", \"aten::sigmoid\", \"aten::sub.Tensor\", \"aten::upsample_nearest2d.vec\", \"metal::copy_to_host\", \"metal_prepack_unet::conv2d_run\"]"}
