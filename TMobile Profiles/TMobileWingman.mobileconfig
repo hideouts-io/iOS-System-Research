@@ -1,0 +1,76 @@
+{
+  "InstallDate" => 2022-12-22 00:08:44 +0000
+  "InstallOptions" => {
+    "carrierIdentifier" => "77DBF77B-40D5-4C3E-A01E-54F4655E35CF"
+    "carrierName" => "T-Mobile"
+    "filterFlag" => 18
+    "isInstalledInteractively" => false
+    "signatureVersion" => 2
+  }
+  "MCProfileIsRemovalStub" => true
+  "PayloadContent" => [
+    0 => {
+      "AutoJoin" => true
+      "CaptiveBypass" => false
+      "DisableAssociationMACRandomization" => false
+      "DisplayedOperatorName" => "t-mobile"
+      "EAPClientConfiguration" => {
+        "AcceptEAPTypes" => [
+          0 => 23
+        ]
+        "EAPSIMAKAEncryptedIdentityEnabled" => true
+      }
+      "EncryptionType" => "WPA2"
+      "HIDDEN_NETWORK" => false
+      "IsHotspot" => true
+      "MCCAndMNCs" => [
+        0 => "310260"
+      ]
+      "NAIRealmNames" => [
+        0 => "wlan.mnc260.mcc310.3gppnetwork.org"
+        1 => ""
+      ]
+      "PayloadDescription" => "Configures Wi-Fi settings"
+      "PayloadDisplayName" => "WiFi"
+      "PayloadIdentifier" => "com.apple.TMobile_US.4c93231c-d474-11eb-8bf8-f45c89abb0d9"
+      "PayloadType" => "com.apple.wifi.managed"
+      "PayloadUUID" => "27e8c468-da0a-11eb-b9cf-f45c89abb0d9"
+      "PayloadVersion" => 1
+      "ProxyPACFallbackAllowed" => false
+      "ProxyType" => 0
+      "ServiceProviderRoamingEnabled" => true
+      "SSID_STR" => "t-mobile.com-609A23C1-B871-41F0-81EE-C72C9D95608C"
+    }
+    1 => {
+      "AutoJoin" => true
+      "CaptiveBypass" => false
+      "DisableAssociationMACRandomization" => false
+      "EAPClientConfiguration" => {
+        "AcceptEAPTypes" => [
+          0 => 23
+        ]
+      }
+      "EncryptionType" => "Any"
+      "HIDDEN_NETWORK" => true
+      "IsHotspot" => true
+      "PayloadDescription" => "Configures Wi-Fi settings"
+      "PayloadDisplayName" => "Wi-Fi"
+      "PayloadIdentifier" => "com.apple.TMobile_US.4c93248e-d474-11eb-8bf8-f45c89abb0d9"
+      "PayloadType" => "com.apple.wifi.managed"
+      "PayloadUUID" => "27e8c5d0-da0a-11eb-b9cf-f45c89abb0d9"
+      "PayloadVersion" => 1
+      "ProxyPACFallbackAllowed" => false
+      "ProxyType" => 0
+      "ServiceProviderRoamingEnabled" => false
+      "SSID_STR" => "TMobileWingman"
+    }
+  ]
+  "PayloadDisplayName" => "T-Mobile US"
+  "PayloadIdentifier" => "com.apple.TMobile_US.e4797e20-da0e-11eb-8c26-f45c89abb0d9"
+  "PayloadOrganization" => "T-Mobile US"
+  "PayloadType" => "Configuration"
+  "PayloadUUID" => "e4797f74-da0e-11eb-8c26-f45c89abb0d9"
+  "PayloadVersion" => 1
+  "ProfileWasEncrypted" => false
+  "TargetDeviceType" => 0
+}
