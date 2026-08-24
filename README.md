@@ -31,6 +31,8 @@ The repository follows an evidence-first approach: direct observations are separ
 
 The repository now includes [iOS Developer Toolkit](IOSDeveloperToolkit/README.md), a Python/PySide6 macOS GUI for connected-device recognition, Developer Mode guidance, modern personalized DDI mounting, local Xcode DDI/Cryptex installation, `pymobiledevice3` command execution, Unified Logging and DVT collection, process and filesystem snapshots, and iOS PCAP capture. It preserves each run in a timestamped evidence folder with command results, scope limits, and SHA-256 hashes.
 
+[![iOS Developer Toolkit device and DDI interface](IOSDeveloperToolkit/docs/screenshots/device-and-ddi.png)](IOSDeveloperToolkit/README.md)
+
 Run it from the repository root:
 
 ```bash

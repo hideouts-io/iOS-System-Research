@@ -4,13 +4,13 @@ set -euo pipefail
 MODE="${1:-run}"
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PROJECT_DIR="$ROOT_DIR/IOSDeveloperToolkit"
-VENV_DIR="$PROJECT_DIR/.venv"
+VENV_DIR="$PROJECT_DIR/venv"
 DIST_DIR="$PROJECT_DIR/dist"
 APP_BUNDLE="$DIST_DIR/iOS Developer Toolkit.app"
 APP_CONTENTS="$APP_BUNDLE/Contents"
 APP_MACOS="$APP_CONTENTS/MacOS"
 APP_EXECUTABLE="$APP_MACOS/iOSDeveloperToolkit"
-PROCESS_PATTERN="[P]ython -m ios_developer_toolkit"
+PROCESS_PATTERN="[i]os_developer_toolkit"
 
 stop_existing() {
   while IFS= read -r process_id; do
@@ -56,7 +56,12 @@ case "$MODE" in
   --verify|verify)
     open_app
     sleep 3
-    pgrep -f "$PROCESS_PATTERN" >/dev/null
+    if ! APP_PID="$(pgrep -f "$PROCESS_PATTERN" | head -n 1)"; then
+      echo "iOS Developer Toolkit exited before launch verification completed" >&2
+      exit 1
+    fi
+    sleep 2
+    kill -0 "$APP_PID"
     ;;
   *)
     echo "usage: $0 [run|--debug|--logs|--telemetry|--verify]" >&2
