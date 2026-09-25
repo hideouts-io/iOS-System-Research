@@ -503,4 +503,4 @@ As additional evidence is added, conclusions should continue to be tied to the u
 
 # License
 
-Unless otherwise noted, repository content is provided under the MIT License.
+Unless otherwise noted, repository content is provided under the [MIT License](LICENSE).
